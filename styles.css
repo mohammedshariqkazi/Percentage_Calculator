@@ -1,0 +1,108 @@
+/* Remove unnecessary global styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: #212121;
+  background-color: #fff;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p {
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.form {
+  background-color: #fff; /* Use white background for Material Design */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12); /* Add subtle shadow */
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.form fieldset {
+  border: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-divider {
+  margin: 0 10px; /* Adjust as needed */
+  color: #ddd;
+}
+
+.form input {
+  border: 1px solid #ccc; /* Replace with #ddd for lighter border */
+  border-radius: 4px; /* Match other elements */
+  font-size: 1rem; /* Use consistent font size */
+  padding: 8px 12px; /* Adjust for better fit */
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form input:focus {
+  border-color: #3f51b5; /* Use primary color on focus */
+}
+
+.form input[type=text] {
+  width: 60px; /* Adjust width as needed */
+}
+
+.form input[type=submit] {
+  background-color: #3f51b5; /* Use primary color */
+  color: #fff;
+  font-size: 1rem; /* Consistent font size */
+  font-weight: 500;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.form input[type=submit]:hover {
+  background-color: #2d3e87; /* Darken primary color on hover */
+}
+
+/* Ripple effect (using CSS pseudo-class, you may need JavaScript for better implementation) */
+.form input[type=submit]:active {
+  
